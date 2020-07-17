@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json.Linq;
+﻿/*this class make use of ValidatebeerID and ValidateRating methods to validate id(using RetrieveDataFromPunkById)
+ * and rating parameter, then sends response to BeersController */
+
+using Newtonsoft.Json.Linq;
 using System;
 
 namespace PunkBeer.Models

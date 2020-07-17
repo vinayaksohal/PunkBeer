@@ -38,7 +38,7 @@ namespace PunkBeer
             if (!Regex.IsMatch(user.username, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z",RegexOptions.IgnoreCase))
             {
                 actionContext.Response = actionContext.Request.CreateResponse(
-                HttpStatusCode.OK,
+                HttpStatusCode.BadRequest,
                 new { foo = "Invalid Email Format" },
                 actionContext.ControllerContext.Configuration.Formatters.JsonFormatter
                 );

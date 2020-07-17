@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
+﻿/*This Class receives requested beer name from  API request and use it to get respose from Punk API  */
+
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -40,7 +42,7 @@ namespace PunkBeer.Models
                 {
                     // Reading Response.  
                     string resp = response.Content.ReadAsStringAsync().Result;
-                    //resp=Regex.Unescape(resp);
+                    
                     if (!string.IsNullOrEmpty(resp) && resp!="[]")
                     {
                         JArray jsonArray = JArray.Parse(resp);

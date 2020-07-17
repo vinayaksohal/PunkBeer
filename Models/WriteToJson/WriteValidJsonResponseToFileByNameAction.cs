@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿/*this class receives Jobject from RetrieveDataFromPunkByName and wrire it to Database2.json using the class
+ 'DataClassBeerByNameAction'*/
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json.Linq;
+﻿/* This Class gets beer id passed through API request(BeerById) and validates it with PUNK API
+ * and return API response in the form of Jobject  */
+
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -42,7 +45,7 @@ namespace PunkBeer.Models
                 {
                     // Reading Response.  
                     string resp = response.Content.ReadAsStringAsync().Result;
-                    //resp=Regex.Unescape(resp);
+                    
                     if (!string.IsNullOrEmpty(resp)) { }
                     JArray jsonArray = JArray.Parse(resp);
                     //var _resp = JObject.Parse(resp);

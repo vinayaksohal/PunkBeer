@@ -1,4 +1,7 @@
-﻿using System;
+﻿/* This class defines variable which gets populated with the URI parameter and 
+ * JSON request body parameters when 'BeerById' action is performed in BeersController Class" */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/* This class defines variable which gets populated with API response from Punk API 
+ * when Punk API is requested with beer name parameter via BeerByName action */
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

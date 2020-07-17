@@ -1,4 +1,9 @@
-﻿using Microsoft.Ajax.Utilities;
+﻿/*This Class reads data of Beers from Database2.Json when there is valid response
+ * from RetrieveDataFromPunkByName and converts whole file into format using Linq and send
+ * it as response of BeerByName action request*/
+
+
+using Microsoft.Ajax.Utilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;

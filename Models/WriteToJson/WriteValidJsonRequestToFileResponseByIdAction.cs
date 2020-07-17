@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿/* This class writes valid beerById action requests to Database1.json file*/
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
