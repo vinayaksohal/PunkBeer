@@ -1,4 +1,8 @@
-﻿using System.Net.Http;
+﻿using Newtonsoft.Json.Linq;
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace PunkBeer.Models
 {
@@ -12,29 +16,45 @@ namespace PunkBeer.Models
         }
         private static bool reposnse { get; set; }
 
-        public bool GetBeer()
+        public async Task<JObject> GetBeerAsync()
         {
+            JObject responseByName = new JObject();
+            // HTTP GET.  
             using (var client = new HttpClient())
             {
-                string baseUrl = string.Concat("https://api.punkapi.com/v2/beers/" + id);
+                string baseURL = "https://api.punkapi.com/v2/";
+                string _baseURL = "beers/" + id;
+                // Setting Base address.  
 
-                //HTTP GET
-                var responseTask = client.GetAsync(baseUrl);
+                client.BaseAddress = new Uri(baseURL);
 
-                responseTask.Wait();
+                // Setting content type.  
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var result = responseTask.Result;
+                // Initialization.  
+                HttpResponseMessage response = new HttpResponseMessage();
 
-                if (result.IsSuccessStatusCode)
+                // HTTP GET  
+                response = await client.GetAsync(_baseURL).ConfigureAwait(false);
+
+                // Verification  
+                if (response.IsSuccessStatusCode)
                 {
-                    return true;
+                    // Reading Response.  
+                    string resp = response.Content.ReadAsStringAsync().Result;
+                    //resp=Regex.Unescape(resp);
+                    if (!string.IsNullOrEmpty(resp)) { }
+                    JArray jsonArray = JArray.Parse(resp);
+                    //var _resp = JObject.Parse(resp);
+                    dynamic data = JObject.Parse(jsonArray[0].ToString());
+
+                    responseByName = data;
                 }
-                else
-                {
-                    return false;
-                }
+
             }
-        }
 
+            return responseByName;
+        }
     }
 }
+

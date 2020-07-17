@@ -9,7 +9,7 @@ namespace PunkBeer.Models
 {
     public class WriteValidJsonResponseToFileByNameAction<DataClassBeerByNameAction>
     {
-        public void AppendToFile(DataClassBeerByNameAction w)
+        public void AppendToFile(DataClassBeerByNameAction data)
         {
             var filePath = @"C:\Users\user\source\repos\PunkBeer\PunkBeer\Database2.json";
 
@@ -21,7 +21,7 @@ namespace PunkBeer.Models
 
             // Add to List
 
-            list.Add(w);
+            list.Add(data);
 
             // Update json data string2
             jsonData = JsonConvert.SerializeObject(list);

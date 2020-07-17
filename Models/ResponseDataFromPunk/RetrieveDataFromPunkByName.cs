@@ -41,14 +41,16 @@ namespace PunkBeer.Models
                     // Reading Response.  
                     string resp = response.Content.ReadAsStringAsync().Result;
                     //resp=Regex.Unescape(resp);
-                    JArray jsonArray = JArray.Parse(resp);
-                    //var _resp = JObject.Parse(resp);
-                    dynamic data = JObject.Parse(jsonArray[0].ToString());
-
-                    responseByName = data;
+                    if (!string.IsNullOrEmpty(resp) && resp!="[]")
+                    {
+                        JArray jsonArray = JArray.Parse(resp);
+                        //var _resp = JObject.Parse(resp);
+                        dynamic data = JObject.Parse(jsonArray[0].ToString());
+                        responseByName = data;
+                        return responseByName;
+                    }              
                 }
             }
-
             return responseByName;
         }
     }

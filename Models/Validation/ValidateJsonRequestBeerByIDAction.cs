@@ -1,16 +1,20 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 
 namespace PunkBeer.Models
 {
     public class ValidateJsonRequestBeerByIDAction:DataClassBeerByIdAction
     {
         // validate Id coming from API request
-        public bool ValidatebeerID(string id)
+        public JObject ValidatebeerID(string id)
         {
             RetrieveDataFromPunkById getID = new RetrieveDataFromPunkById(id);
 
             //setting static Id variable of CallPunk class
-            return getID.GetBeer();
+            var task = getID.GetBeerAsync();
+            task.Wait();
+            JObject response = task.Result;
+            return response;
         }
 
         

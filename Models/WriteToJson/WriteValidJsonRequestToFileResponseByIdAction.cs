@@ -6,7 +6,7 @@ using System.IO;
 
 namespace PunkBeer.Models
 {
-    public class WriteToFileJsonResponseByNameAction<ValidateJsonRequestBeerByIDAction>
+    public class WriteValidJsonRequestToFileResponseByIdAction<ValidateJsonRequestBeerByIDAction>
     {
         public void AppendToFile(ValidateJsonRequestBeerByIDAction jsonRatingData )
         {

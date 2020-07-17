@@ -1,1 +1,385 @@
-[{"id":"16","username":null,"rating":null,"comments":null},{"id":"1","username":null,"rating":null,"comments":null},{"id":"1","username":null,"rating":null,"comments":null},{"id":"1","username":null,"rating":null,"comments":null},{"id":"2","username":"vinayak.sohal007@gmail.com","rating":"5","comments":"Good"},{"id":"2","username":"vinayak.sohal007@gmail.com","rating":"5","comments":"Good"}]
+[
+  {
+    "id": "1",
+    "name": "Buzz",
+    
+    "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+    "tagline": "A Real Bitter Experience.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Maris Otter Extra Pale",
+          "amount": {
+            "value": "3.3",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Caramalt",
+          "amount": {
+            "value": "0.2",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Munich",
+          "amount": {
+            "value": "0.4",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "1",
+    "name": "Buzz",
+    "description": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+    "tagline": "A Real Bitter Experience.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Maris Otter Extra Pale",
+          "amount": {
+            "value": "3.3",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Caramalt",
+          "amount": {
+            "value": "0.2",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Munich",
+          "amount": {
+            "value": "0.4",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "43",
+    "name": "American Wheat",
+    "description": "A luscious blend of peach, blood orange and banana to make a suitably refreshing beverage that happily straddles the Atlantic.",
+    "tagline": "Hoppy American Wheat.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Extra Pale",
+          "amount": {
+            "value": "2.13",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Wheat",
+          "amount": {
+            "value": "2.5",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Pale Crystal",
+          "amount": {
+            "value": "0.13",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "35",
+    "name": "Berliner Weisse With Raspberries And Rhubarb - B-Sides",
+    "description": "Tart, dry and acidic with a punch of summer berry as rhubarb crumble.",
+    "tagline": "Fruity Berliner Weisse.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Propino Pale Malt",
+          "amount": {
+            "value": "1.63",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Wheat Malt",
+          "amount": {
+            "value": "1.63",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Propino Pale Malt for kettle souring",
+          "amount": {
+            "value": "0.03",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Acidulated Malt for kettle souring",
+          "amount": {
+            "value": "0.03",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "165",
+    "name": "Barley Wine - Russian Doll",
+    "description": "Russian Doll was an experimental set of brews showcasing the effects of varying the amount and ratio of malts in the grist. The barley wine had rich, chewy dark fruit aromas balanced with a spike of zesty hops. Toffee, apricot jam and grapefruit pith, crammed into the head of our little Russian Doll family.",
+    "tagline": "Double India Pale Ale.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Extra Pale",
+          "amount": {
+            "value": "9.5",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Caramalt",
+          "amount": {
+            "value": "1",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Dark Crystal",
+          "amount": {
+            "value": "0.75",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "82",
+    "name": "Hopped-Up Brown Ale - Prototype Challenge",
+    "description": "Brown ales are perfect foils for resinous C-Hops, as the piney elements of the latter contrast brilliantly with the sweeter, nutty elements of the malt bill. The best of both worlds.",
+    "tagline": "Malt Hop Balance.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Extra Pale",
+          "amount": {
+            "value": "4",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Flaked Oats",
+          "amount": {
+            "value": "0.75",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Brown",
+          "amount": {
+            "value": "0.38",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Crystal 150",
+          "amount": {
+            "value": "0.25",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Munich",
+          "amount": {
+            "value": "0.5",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Carafa Special Malt Type 1",
+          "amount": {
+            "value": "0.06",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "82",
+    "name": "Hopped-Up Brown Ale - Prototype Challenge",
+    "description": "Brown ales are perfect foils for resinous C-Hops, as the piney elements of the latter contrast brilliantly with the sweeter, nutty elements of the malt bill. The best of both worlds.",
+    "tagline": "Malt Hop Balance.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Extra Pale",
+          "amount": {
+            "value": "4",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Flaked Oats",
+          "amount": {
+            "value": "0.75",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Brown",
+          "amount": {
+            "value": "0.38",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Crystal 150",
+          "amount": {
+            "value": "0.25",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Munich",
+          "amount": {
+            "value": "0.5",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Carafa Special Malt Type 1",
+          "amount": {
+            "value": "0.06",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "82",
+    "name": "Hopped-Up Brown Ale - Prototype Challenge",
+    "description": "Brown ales are perfect foils for resinous C-Hops, as the piney elements of the latter contrast brilliantly with the sweeter, nutty elements of the malt bill. The best of both worlds.",
+    "tagline": "Malt Hop Balance.",
+    "volume": {
+      "value": "20",
+      "unit": "litres"
+    },
+    "boil_volume": {
+      "value": "25",
+      "unit": "litres"
+    },
+    "ingredients": {
+      "malt": [
+        {
+          "name": "Extra Pale",
+          "amount": {
+            "value": "4",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Flaked Oats",
+          "amount": {
+            "value": "0.75",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Brown",
+          "amount": {
+            "value": "0.38",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Crystal 150",
+          "amount": {
+            "value": "0.25",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Munich",
+          "amount": {
+            "value": "0.5",
+            "unit": "kilograms"
+          }
+        },
+        {
+          "name": "Carafa Special Malt Type 1",
+          "amount": {
+            "value": "0.06",
+            "unit": "kilograms"
+          }
+        }
+      ]
+    }
+  }
+]
